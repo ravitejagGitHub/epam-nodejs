@@ -12,3 +12,4 @@ export default function reverseString(){
         console.log(`${line.toString().split("").reverse().join("")}\n`);
     })
 }
+reverseString();
