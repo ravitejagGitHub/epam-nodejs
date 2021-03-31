@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Epam Node Js Mentoring Program",
   "main": "index.js",
-  "type": "module" ,
+  "type": "module",
   "scripts": {
     "start": "nodemon src/index.js",
     "task1": "nodemon src/Task1/1.1.reverse-string.js",
+    "task1.2": "nodemon src/Task1/1.2.read-once-csv.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/ravitejagGitHub/epam-nodejs#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "g": "^2.0.1"
   }
 }
