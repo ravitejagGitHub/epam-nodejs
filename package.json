@@ -8,6 +8,7 @@
     "start": "nodemon src/index.js",
     "task1": "nodemon src/Task1/1.1.reverse-string.js",
     "task1.2": "nodemon src/Task1/1.2.read-once-csv.js",
+    "task1.2.1": "nodemon src/Task1/1.2.read-csv-stream.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

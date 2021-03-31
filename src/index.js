@@ -17,6 +17,13 @@ if(args.length> 2) {
                 console.error("Can't find read csv module.")
             });
             break;
+    case 'task1.2.1':
+                import("./Task1/1.2.read-csv-stream.js").then(()=> {
+                    console.log("****** Read CSV file ******");
+                },(e)=>{
+                    console.error("Can't find read csv module.")
+                });
+                break;
     }
 } else {
     console.log("Please provide task number as argument to run: Ex: npm start task1");

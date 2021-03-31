@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/src/index.js",
-            "args": ["task1.2"]
+            "args": ["task1.2.1"]
         }
     ]
 }
