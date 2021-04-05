@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Epam Node Js Mentoring Program",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "task1": "nodemon src/Task1/1.1.reverse-string.js",
-    "task1.2": "nodemon src/Task1/1.2.read-once-csv.js",
+    "start": "nodemon --exec babel-node src/index.js",
+    "task1": "nodemon --exec babel-node src/Task1/1.1.reverse-string.js",
+    "task1.2": "nodemon --exec babel-node src/Task1/1.2.read-once-csv.js",
     "task1.2.1": "nodemon src/Task1/1.2.read-csv-stream.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +22,10 @@
   },
   "homepage": "https://github.com/ravitejagGitHub/epam-nodejs#readme",
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
     "nodemon": "^2.0.7"
   },
   "dependencies": {

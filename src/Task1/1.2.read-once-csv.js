@@ -1,10 +1,12 @@
+
 import csvtojson from 'csvtojson';
 import { writeFile } from 'fs';
+var path = require('path');
 
 try {
-  const sourcePath  = new URL('../../csv/nodejs-hw1-ex1.csv', import.meta.url);
-  const destPath  = new URL('../../csv/nodejs-hw1-ex2.json', import.meta.url);
-
+  const sourcePath  = path.join(__dirname, '../../csv/nodejs-hw1-ex1.csv') ;
+  const destPath  = path.join(__dirname, '../../csv/nodejs-hw1-ex2.json') ;
+  console.log(__dirname);
   csvtojson()
   .fromFile(sourcePath)
   .then((jsonObj)=>{  
